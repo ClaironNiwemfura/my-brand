@@ -237,3 +237,32 @@ h2{
     height: 30px;
     border-radius: 20px;
 }
+
+
+
+@media only screen and (max-width: 430px){
+    .lowerpart-Home{
+        display: block;
+        margin-top: 20px;
+    } 
+    .lowerpart-Home img {
+        width: 80%;
+        height: 60vh;
+        margin-left: 20px;
+    }
+    .list{
+        display: block;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    
+    .rightside-Home{
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
+
+}
