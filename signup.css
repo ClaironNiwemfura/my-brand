@@ -1,0 +1,57 @@
+*{
+    background-color: black;
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    color: white;
+}
+.logo h2{
+    color:#EFB100;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.signuptitle h1{
+    text-align: center;
+}
+.signuptitle span{
+    color: #EFB100;
+}
+.signupinputs input {
+    background-color: #222121;
+    border: none;
+    width: 480px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
+    
+}
+.signupbtn{
+    background-color: #EFB100;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+.lowerpartsignup{
+    display: flex;
+    align-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.signupp{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.log{
+    color: #EFB100;
+}
+.signuptitle{
+    margin-bottom: 30px ;
+}
+.lowerpartsignup{
+    margin-top: 30px;
+}

@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Brand</title>
+    <link rel="stylesheet" href="/my-brand/index.css">
 </head>
 <body>
-    <div>
+    <div class="body">
         <div class="Home">
             <div class="upperPart-Home">
                 <div class="logo">
-                    <h1>CLAIRON</h1>
+                    <h2>CLAIRON</h2>
                 </div>
                 <div class="nav-bar">
-                    <li>
-                       <ol>HOME </ol>
-                       <ol>ABOUT ME </ol>
-                       <ol>PROJECTS </ol>
-                       <ol>BLOG </ol>
-                       <ol>CONTACT US</ol>
-                    </li>
+                    <ul class="list">
+                        <a href="index.HTML"> <li> HOME</li></a>
+                        <a href="# aboutme"><li> ABOUT ME </li></a> 
+                        <a href="#project"><li>PROJECTS </li></a>
+                        <a href="#blog"><li>BLOG</li></a>
+                        <a href="#contactme"><li>CONTACT ME </li></a>
+                      </ul>
                 </div>   
             </div>
             
-            <div class="lowerpart-Home">
+            <div class="lowerpart-Home" id="home">
                 <div class="leftside-Home">
                   <img src="/my-brand/Images/WhatsApp Image 2024-01-29 at 14.06.48.jpeg" alt="img">
 
                 </div>
 
                 <div class="rightside-Home">
-                   <h1>I’M CLAIRON NIWEMFURA</h1>
-                   <h1>SOFTWARE ENGINEER</h1>   
-                   <p>"Blending creativity with technical expertise,
-                    I design intuitive interfaces and engineer
-                    innovative solutions to enhance user experiences."</p>
+                    <div>
+                      <h2>I’M CLAIRON NIWEMFURA</h2>
+                      <h2 class="dif">SOFTWARE ENGINEER</h2> 
+                    </div>
+                    <div>
+                      <p>"Blending creativity with technical expertise, <br>
+                         I design intuitive interfaces and engineer <br>
+                        innovative solutions to enhance user experiences."</p>
+                    </div>
                    <button class="btn">contact us</button>
                 </div>
 
@@ -42,108 +47,140 @@
 
         </div>
 
-        <div class="about-me">
-            <div>
-                <p>My Journey in the tech industry is fueled by a vision of a world
-                    where technology plays a huge role in progress. I see technology
-                    as a powerful force that can transform societies, especially in Africa, 
-                   where innovation can bring about remarkable improvements.
-                   Beyond my professional pursuits, I am deeply committed to
-                    personal development. I firmly believe that meaningful change 
-                   begins with self-improvement. By constantly striving to better myself, 
-                   I aim to be a catalyst for positive change not only in my own life but 
-                   also in the lives of those I have the privilege to influence.
+        <div class="about-me" id="aboutme">
+            <h1>ABOUT ME</h1>
+            <div class="upperpart-aboutMe">
+                <p>My Journey in the tech industry is fueled by a vision of a world <br>
+                    where technology plays a huge role in progress. I see technology <br>
+                    as a powerful force that can transform societies, especially in Africa,<br> 
+                   where innovation can bring about remarkable improvements. <br>
+                   Beyond my professional pursuits, I am deeply committed to <br>
+                    personal development. I firmly believe that meaningful change <br>
+                   begins with self-improvement. By constantly striving to better myself, <br>
+                   I aim to be a catalyst for positive change not only in my own life but <br>
+                   also in the lives of those I have the privilege to influence. <br>
                 </p>
-
+                
                 <img src="/my-brand/Images/WhatsApp Image 2024-01-31 at 07.38.23 (1).jpeg" alt="img">
             </div>
-            <div>
-                <h3>Skills</h3>
-                <div>
-                    <ol> >HTML</ol>
-                    <ol> >CSS</ol>
-                    <ol> >JAVASCRIPT</ol>
+            <button class="btn-aboutme">DOWNLOAD MY CV</button>
+            <div class="lowerpart-aboutMe">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skillset1">
+                        <ol> >HTML</ol>
+                        <ol> >CSS</ol>
+                        <ol> >JAVASCRIPT</ol>
+                    </div>
+                    <div>
+                        <ol> >PYTHON</ol>
+                        <ol> >FIGMA</ol>
+                        <ol> >REACT</ol>
+                    </div>
                 </div>
-                <div>
-                    <ol> >PYTHON</ol>
-                    <ol> >FIGMA</ol>
-                    <ol> >REACT</ol>
-                </div>
-                
-
             </div>
-           
         </div>
 
-        <div class="projects">
-           <h1>PROJECT</h1>
-           <h4>Project 1</h4>
-           <img src="" alt="">
-           <p>This project is called Mama care ,Mama Care is a project designed to assist pregnant 
-            mothers and those caring for children aged 1 month to 2 years. It helps them manage 
-            appointments and provides guidance on child care.</p>
-            <a href=""></a>
-            <p>This project is called ENJOY KIGALI,   Enjoy Kigali is a website that helps people
-                find great places to hang out in Kigali
-            </p>
-            <a href=""></a>
-            <h4>project 2</h4>
-            <img src="" alt="">
+        <div class="projects" id="project">
+           <h1>PROJECTS</h1>
+           <div class="project1">
+               <div> 
+                 <img src="/my-brand/Images/mamacarepic.PNG" alt="img">
+               </div>
+               <div>
+                  <h4>Project 1</h4>
+                  <p>This project is called Mama care ,Mama Care is a project designed to assist pregnant <br>
+                  mothers and those caring for children aged 1 month to 2 years. It helps them manage <br>
+                  appointments and provides guidance on child care.</p>
+                  <a href=""></a>
+               </div>
+            </div>
+           <div class="project2">
+                <div>
+                    <h4>project 2</h4>
+                    <p>This project is called ENJOY KIGALI,   Enjoy Kigali is a website that helps people <br>
+                        find great places to hang out in Kigali
+                    </p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="/my-brand/Images/enjoy kigali.PNG" alt="img">
+                </div>
+            </div>
         </div>
-        <div class="blog">
+        <div class="blog" id="blog">
            <h1>Blog</h1>
-           <div>
-              <img src="" alt="">
-              <h4>Role of technology in building 
-                sustainable development</h4>
-              <p>Technology has been proven to be a
-                core to help a country to build a sustainable
-                development .... Read more</p>
+           <div class="blogPart">
+              <div class="blog1">
+                  <img src="/my-brand/Images/pic 1.jpg" alt="">
+                  <h4>Role of technology in building <br>
+                  sustainable development</h4>
+                  <p>Technology has been proven to be a <br>
+                  core to help a country to build a sustainable <br>
+                  development .... <span> Read more</span>  </p>
+              </div>
+              <div>
+                 <img src="/my-brand/Images/pic 2.jpg" alt="">
+                 <h4>Technology in Education</h4>
+                 <p>How can we improve the level of education <br>
+                  using technology especially in Africa... <br>
+                  <span> Read more</span></p>
+              </div>
+              <div>
+                 <img src="/my-brand/Images/pic 3.jpg" alt="">
+                 <h4>Life of coding as a girl</h4>
+                 <p>My life as a girl who code ,you can ask <br>
+                  yourself its advantage and disadvantages  <br>
+                 .....<span> Read more</span></p>
+              </div>
            </div>
-           <div>
-              <img src="" alt="">
-              <h4>Technology in Education</h4>
-              <p>How can we improve the level of education
-                using technology especially in Africa...
-               Read more</p>
-           </div>
-           <div>
-              <img src="" alt="">
-              <h4>Life of coding as a girl</h4>
-              <p>My life as a girl who code ,you can ask
-                yourself its advantage and disadvantages
-               .....Read more</p>
-           </div>
-           <div>
-             <p>subscribe for more contents!!</p>
-             <button>subscribe</button>
+            <div class="subscribePart">
+             <p>subscribe <span>for</span> more <span>contents</span>!!</p>
+             <a href="signup.HTML"><button class="subscribe-btn">subscribe</button></a> 
            </div>
         </div>
-        <div class="contact-me">
-            <h1>CONTACT ME</h1>
-            <div class="left-partcontactMe">
-                <p></p>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
+        <div class="contact-me" id="contactme">
+            <h1>CONTACT <span> US </span></h1>
+            <div class="contact-mepart">
+               <div class="left-partcontactMe">
+                    <p class="getintouch">GET IN TOUCH WITH ME</p>
+                    <p>You can reach out to me and <br>
+                       discuss more</p>
+                    <div class="contact-meIcons">
+                      <img src="" alt="">    
+                      <div>
+                         <p>Mail me</p>
+                         <p>claironaimee@gmail.com</p>
+                      </div>
+                    </div>   
+                    <div class="contact-meIcons">
+                        <img src="" alt="">
+                        <div>
+                            <p>call me</p>
+                            <p>+250785396963</p>
+                        </div>
+                    </div>
+                    <div class="contact-meIcons">
+                        <img src="" alt="">
+                        <div>
+                            <p>kk 685 st Kigali,Rwanda</p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="right-partContactme">
+                    <input type="text" placeholder="your name">
+                    <input type="text" placeholder="your email"> <br>
+                    <input type="text" placeholder="your subject"> <br>
+                    <input type="text" placeholder="your message" id="message"> <br>
+                    <button class="message-btn">SEND MESSAGE</button>
                 </div>
             </div>
-            <div>
-
             </div>
-        </div>
+            
     </div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+*{
+    background-color: black;
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    color: white;
+}
+.logo h2{
+    color:#EFB100;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.logintitle h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logintitle span{
+    color: #EFB100;
+}
+.loginInputs input {
+    background-color: #222121;
+    border: none;
+    width: 480px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+.loginbtn{
+    background-color: #EFB100;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+.lowerpartlogin{
+    display: flex;
+    align-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.sign{
+    color: #EFB100;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.lowerpartlogin{
+    margin-top: 30px;
+}
+.pass{
+    display: flex;
+    align-content: end;
+}
