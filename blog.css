@@ -1,0 +1,35 @@
+*{
+    background-color: black;
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    color: white;
+    overflow-x: hidden;
+}
+
+.logo h2{
+    color:#EFB100;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+span{
+    color: #EFB100;
+}
+.blogPart img{
+    width: 380px;
+    height: 200px;
+   
+}
+.blog1 ,.blog2 ,.blog3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.mainblogpage img{
+    width: 500px;
+    height: 300px;
+}

@@ -4,6 +4,7 @@
     margin: 0px ;
     box-sizing: border-box;
     color: white;
+    overflow-x: hidden;
 }
 .logo h2{
     color:#EFB100;
@@ -16,6 +17,18 @@
 .signuptitle span{
     color: #EFB100;
 }
+.signupinputpart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input1{
+    width: 350px;
+    margin-right:20px ;
+}
+#input2{
+    width: 350px;
+}
 .signupinputs input {
     background-color: #222121;
     border: none;
@@ -23,7 +36,7 @@
     height: 50px;
     border-radius: 20px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     padding-left: 20px;
     
 }
@@ -54,4 +67,47 @@
 }
 .lowerpartsignup{
     margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.lowerpartsignup a:hover {
+    color: red; 
+}
+
+
+@media only screen and (max-width: 750px){
+    .signupinputpart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #input1{
+        width: 480px;
+        margin-right:20px ;
+    }
+    #input2{
+        width: 480px;
+    }
+    .signupinputs input{
+        margin-left: 50px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .signupinputs input{
+        width: 200px;
+        height: 30px;
+    }
+    #input1{
+        width: 200px;
+        margin-right:20px ;
+    }
+    #input2{
+        width: 200px;
+    }
+    .signuptitle h1{
+        font-size: 20px;
+    }
+
 }

@@ -12,6 +12,9 @@ h2{
 .nav-bar li ol{
     display: flex;
 }
+.upperPart-Home{
+    margin-top: -20px;
+}
 .logo{
     margin-top: 30px;
     margin-left: 50px ;
@@ -80,6 +83,13 @@ h2{
 }
 .upperpart-aboutMe{
     margin-top: 40px;
+}
+.upperpart-aboutMe span{
+    background-color: #EFB100;
+    height: 400px;
+    width:100%;
+    border-radius: 2%;
+    
 }
 .upperpart-aboutMe p{
     margin-top: 40px;
@@ -245,16 +255,26 @@ h2{
 a{
     text-decoration: none;
 }
+ i{
+    color: #EFB100;
+    margin-right: 20px;
+}
+.icons{
+    margin-right: 60px;
+}
 @media only screen and (max-width: 430px) {
     .lowerpart-Home{
-        display :block;
+        display :inline-block;
+        margin-top: 0px;
     }  
     .lowerpart-Home img{
         margin-left: 20px;
         width:90%;
+        margin-top: 0px;
+        margin-bottom: opx;
     }
     .list{
-        display:block;
+        display:inline-block;
         
     }
     .rightside-Home{
@@ -263,7 +283,7 @@ a{
         
     }
     .rightside-Home p{
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom:20px;
         width: 100%;
     }
@@ -272,12 +292,17 @@ a{
     }
     .upperpart-aboutMe{
         display: block;
+        margin-top: -20px;
+        width: 600px;
     }
     .upperpart-aboutMe p{
         margin-left: 20px;
+        width: 100%;
+
     }
     .upperpart-aboutMe img {
         margin-left: 50px;
+        margin-top: 30px;
         width: 50%;
         height: 300px;
     }
@@ -316,20 +341,41 @@ a{
         margin-left: 20px;
 
     }
+
     .project2{
         margin-left: 20px;
     }
     .upperpart-aboutMe img{
-        width: 70%;
+        width: 30%;
         margin-right: 0px;
         margin-top: 20px;
     }
+    .upperpart-aboutMe p{
+        width: 60%;
+    }
+    /* .lowerpart-Home{
+        display: flex;
+        justify-content:space-evenly;
+    } */
     .lowerpart-Home img{
         width: 100%;
+        height: 80%;
     }
-    .rightside-Home{
-        margin-left: 10px;
-        align-content: flex-end;
+    .rightside-Home {
+        width: 90%;
+        margin-left: 60px;
+        margin-top: 60px;
+        /* align-content: flex-start; */
+    }
+    .rightside-Home h2{
+        font-size: 21px;
+        /* width: 90%; */
+        /* margin-left: 60px; */
+        /* align-content: flex-start; */
+    }
+    .rightside-Home .parahome{
+        width: 80%;
+        font-size: 17px;
     }
     .blogPart{
         display: inline-block;
@@ -344,4 +390,20 @@ a{
         margin-left: 20px;
         width: 40%;
     }
+    .list{
+        text-indent: 20px;
+        margin-top:0px;
+    }
+    
+}
+@media only screen and (max-width: 330px){
+    .skillset1{
+        margin-right: 40px;
+    }
+
+    .blogPart img{
+        width: 270px;
+        height: 200px;
+    }
+     
 }

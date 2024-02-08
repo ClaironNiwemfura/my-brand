@@ -52,6 +52,21 @@
     margin-top: 30px;
 }
 .pass{
-    display: flex;
-    align-content: end;
+    text-align: end;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 430px){
+    .loginInputs input{
+        width: 80%;
+        height: 30px;
+    }
+    .logintitle h1{
+        font-size: 20px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
 }
