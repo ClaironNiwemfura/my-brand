@@ -1,9 +1,12 @@
 *{
-    background-color: black;
+    background-color: white;
     padding: 0px;
     margin: 0px ;
     box-sizing: border-box;
-    color: white;
+    color:rgb(85,85,85) ;
+}
+body{
+    font-family: 'Poppins', sans-serif;
 }
 .logo h2{
     color:#EFB100;
@@ -26,6 +29,7 @@
     margin-bottom: 20px;
     margin-left: 50px;
     padding-left: 20px;
+    color: white;
 }
 .loginbtn{
     background-color: #EFB100;
@@ -68,5 +72,8 @@ a{
     }
     .logo h2{
         font-size: 20px;
+    }
+    .lowerpartlogin{
+        display: block;
     }
 }

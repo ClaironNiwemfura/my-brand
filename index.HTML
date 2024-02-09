@@ -6,30 +6,46 @@
     <title>My Brand</title>
     <link rel="stylesheet" href="./index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="body">
-        <div class="Home">
+        <div class="Home"  id="home">
             <div class="upperPart-Home">
                 <div class="logo">
                     <h2>CLAIRON</h2>
                 </div>
                 <div class="nav-bar">
                     <ul class="list">
-                        <a href="index.HTML"> <li> HOME</li></a>
-                        <a href="# aboutme"><li> ABOUT ME </li></a> 
-                        <a href="#project"><li>PROJECTS </li></a>
-                        <a href="#blog"><li>BLOG</li></a>
-                        <a href="#contactme"><li>CONTACT ME </li></a>
-                      </ul>
+                        <li><a href="#home">  HOME</a></li>
+                        <li><a href="#aboutme"> ABOUT ME </a></li>
+                        <li><a href="#project">PROJECTS  </a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contactme">CONTACT ME</a></li>
+                    </ul>
                 </div>   
             </div>
-            
+            <nav id="hamburger-nav">
+               <div class="logo">Clairon</div>
+               <div class="hamburger-menu">
+                  <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   </div>
+                  <div class="menu-links">
+                    <li><a href="#home">  HOME</a></li>
+                        <li><a href="#aboutme" onclick="toggleMenu()"> ABOUT ME </a></li>
+                        <li><a href="#project" onclick="toggleMenu()">PROJECTS  </a></li>
+                        <li><a href="#blog" onclick="toggleMenu()">BLOG</a></li>
+                        <li><a href="#contactme" onclick="toggleMenu()">CONTACT ME</a></li>
+                 </div>
+               </div>
+            </nav>
             <div class="lowerpart-Home" id="home">
                 <div class="leftside-Home">
                   <img src="./Images/WhatsApp Image 2024-01-29 at 14.06.48.jpeg" alt="img">
-
-                </div>
+               </div>
 
                 <div class="rightside-Home">
                     <div>
@@ -41,38 +57,73 @@
                          I design intuitive interfaces and engineer 
                         innovative solutions to enhance user experiences."
                     </div>
-                   <button class="btn">contact us</button>
+                    <div>
+                        <button class="btn-aboutme"
+                        onclick="window.open('./assets/claironcv.pdf')">Download CV</button>
+                        <button class="btn" onclick="location.href=('./#contactme')"
+                        >contact us</button>
+                    </div>
+                    <div id="socials-container">
+                        <img src="./Images/linkedin.png" alt="linkedin" 
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/clairon-niwemfura-660587249/'">
+                        <img src="./Images/github.png" alt="github" 
+                        class="icon"
+                        onclick="location.href='https://github.com/ClaironNiwemfura'">
+                    </div>
+                    
                 </div>
 
             </div>
 
         </div>
-
         <div class="about-me" id="aboutme">
             <h1>ABOUT ME</h1>
-            <div class="upperpart-aboutMe">
-                <p>My Journey in the tech industry is fueled by a vision of a world where technology plays a huge role in progress. I see technology as a powerful force that can transform societies, especially in Africa, where innovation can bring about remarkable improvements.Beyond my professional pursuits, I am deeply committed to personal development. I firmly believe that meaningful change begins with self-improvement. By constantly striving to better myself, I aim to be a catalyst for positive change not only in my own life but also in the lives of those I have the privilege to influence. 
-                </p>
-                
-                <span><img src="./Images/WhatsApp Image 2024-01-31 at 07.38.23 (1).jpeg" alt="img"></span>
-            </div>
-            <button class="btn-aboutme">DOWNLOAD MY CV</button>
-            <div class="lowerpart-aboutMe">
-                <h2>Skills</h2>
-                <div class="skills">
-                    <div class="skillset1">
-                        <ol> >HTML</ol>
-                        <ol> >CSS</ol>
-                        <ol> >JAVASCRIPT</ol>
+            <div class="section-container">
+                <div class="imageabout-me">
+                    <span><img src="./Images/mypic1.png" alt="img"></span> 
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <i class='bx bxs-color'></i>
+                            <h3>Education</h3>
+                            <p> Software Engineering</p>
+                        </div>
+                        <div class="details-container">
+                            <i class='bx bx-shape-circle'></i>
+                             <h3>Experience</h3>
+                             <p>1+ year <br> Software Developer</p>
+                        </div>
                     </div>
-                    <div>
-                        <ol> >PYTHON</ol>
-                        <ol> >FIGMA</ol>
-                        <ol> >REACT</ol>
+                   <div class="upperpart-aboutMe">
+                        <p>My Journey in the tech industry is fueled by a vision of a world where technology plays a huge role in progress. I see technology as a powerful force that can transform societies, especially in Africa, where innovation can bring about remarkable improvements.Beyond my professional pursuits, I am deeply committed to personal development. I firmly believe that meaningful change begins with self-improvement.  
+                        </p>
+                    </div>
+                     
+                </div>
+           
+            </div>    
+            <div class="lowerpart-aboutMe">
+                <div>
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <div class="skillset1">
+                            <ol> >HTML</ol>
+                            <ol> >CSS</ol>
+                            <ol> >JAVASCRIPT</ol>
+                            </div>
+                        <div>
+                            <ol> >PYTHON</ol>
+                            <ol> >FIGMA</ol>
+                            <ol> >REACT</ol>
+                        </div>
                     </div>
                 </div>
-            </div>
+           </div>
+            
         </div>
+            
 
         <div class="projects" id="project">
            <h1>PROJECTS</h1>
@@ -85,7 +136,7 @@
                   <p>This project is called Mama care ,Mama Care is a project designed to assist pregnant <br>
                   mothers and those caring for children aged 1 month to 2 years. It helps them manage <br>
                   appointments and provides guidance on child care.</p>
-                  <a href=""></a>
+                  <a href="https://infant-healthy-assurance-63vs.vercel.app/">Link</a>
                </div>
             </div>
            <div class="project2">
@@ -94,7 +145,7 @@
                     <p>This project is called ENJOY KIGALI,   Enjoy Kigali is a website that helps people <br>
                         find great places to hang out in Kigali
                     </p>
-                    <a href=""></a>
+                    <a href="https://enjoykigali.netlify.app/">link</a>
                 </div>
                 <div>
                     <img src="./Images/enjoy kigali.PNG" alt="img">
@@ -104,7 +155,7 @@
         <div class="blog" id="blog">
            <h1>Blog</h1>
            <div class="blogPart">
-              <div class="blog1">
+              <div class="blog1" id="blogsection">
                   <img src="./Images/pic 1.jpg" alt="img">
                   <h4>Role of technology in building <br>
                   sustainable development</h4>
@@ -112,19 +163,19 @@
                   core to help a country to build a sustainable <br>
                   development .... <span> Read more</span>  </p>
               </div>
-              <div>
+              <div id="blogsection">
                  <img src="./Images/pic 2.jpg" alt="img">
                  <h4>Technology in Education</h4>
                  <p>How can we improve the level of education <br>
                   using technology especially in Africa... <br>
                   <span> Read more</span></p>
               </div>
-              <div>
+              <div id="blogsection">
                  <img src="./Images/pic 3.jpg" alt="img">
                  <h4>Life of coding as a girl</h4>
                  <p>My life as a girl who code ,you can ask <br>
                   yourself its advantage and disadvantages  <br>
-                 .....<span> Read more</span></p>
+                 .....<a href="./blog.HTML"><span> Read more</span></a></p>
               </div>
            </div>
             <div class="subscribePart">
