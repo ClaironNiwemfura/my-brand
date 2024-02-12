@@ -120,6 +120,7 @@ li{
 .recent-blogs-box{
     height: 83vh;
     overflow-y: hidden;
+    margin-bottom: 20px;
 }
 .info-box{
     height: 28vh; 
@@ -155,6 +156,35 @@ li{
     width: 100px;
     border: none;
     padding: 0.5rem;
+}
+
+.message-part{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 46%;
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: -120px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+    box-shadow: 0 4px 8px rgba(2, 2, 4, 4);
+}
+.message{
+    display: flex;
+    gap: 8rem;
+}
+.message-list{
+    display: flex;
+    gap: 2rem;
+}
+@media only screen and (max-width: 430px) {
+    .message-part{
+        margin-top: 0px;
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 430px) {
     .dashboard-container{

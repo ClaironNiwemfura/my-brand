@@ -88,9 +88,6 @@ h2{
     justify-content: space-between;
     width: 90%;
 }
-.about-me{
-    position: relative;
-}
 .details-container{
     padding: 1.5rem;
     flex: 1;
@@ -135,20 +132,11 @@ h2{
     flex-direction: column;
     width: 50%;
 }
-#boutme{
-    position: relative;
-}
 .about-me h1{
     color: #EFB100;
     margin-top: 30px;
     text-align: center;
 }
-/* .upperpart-aboutMe img{
-    height: 350px;
-    width:90%;
-    border-radius: 2%;
-    margin-right:100px ;
-} */
 .upperpart-aboutMe{
     margin-top: 40px;
 }
@@ -157,7 +145,6 @@ h2{
 }
 .lowerpart-aboutMe{
     display: flex;
-    /* margin-left: 50px; */
     justify-content: center;
     align-items: center;
 }
@@ -399,13 +386,15 @@ h2{
     align-content: center;
 }
 @media only screen and (max-width: 430px) {
+    *{
+        font-size: 14px;
+    }
     .lowerpart-Home{
         display :inline-block;
         margin-top: 0px;
     }  
     .lowerpart-Home img{
         margin-left: 20px;
-        /* width:90%; */
         margin-top: 0px;
         margin-bottom: opx;
     }
@@ -451,21 +440,63 @@ h2{
         width: 100%;
            
     }
-    .project1 img{
-        /* width: 90%; */
-
+    .section-container{
+        display: block;
+        align-items: center;
+        margin-left: 20px;
     }
-    .project2{
-        /* display: block; */
+    .project1 , .project2{
+        display: block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 90%;
+    }
+    .about-details-container{
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .upperpart-aboutMe p{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .details-container{
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    .imageabout-me{
+        margin-left: 2rem;
+        margin-top: -70px;
     }
     .blogPart{
         display: block;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .blog1{
+        width: 420px; 
+    }
+    #blogsection{
+        width: 420px;
+        height: 90vh;
+        margin-left: 80px;
+        font-size: 12px;
+    }
+    .blogPart img{
+        width: 100%;
+        height: 40vh;
+    }
+    .subscribePart p{
+        font-size: 16px;
     }
     .contact-mepart{
         display: block;
+        width: 100%;
+    }
+    .left-partcontactMe{
+        width: 80%;
     }
     .right-partContactme{
-        margin-left: 20px;
+        margin-left: 1rem;
     }
     .section-container{
         display: block;
@@ -496,10 +527,6 @@ h2{
     .upperpart-aboutMe p{
         width: 60%;
     }
-    /* .lowerpart-Home{
-        display: flex;
-        justify-content:space-evenly;
-    } */
     .lowerpart-Home img{
         width: 100%;
         height: 80%;
@@ -512,26 +539,27 @@ h2{
     }
     .rightside-Home h2{
         font-size: 21px;
-        /* width: 90%; */
-        /* margin-left: 60px; */
-        /* align-content: flex-start; */
     }
     .rightside-Home .parahome{
         width: 80%;
         font-size: 17px;
     }
     .blogPart{
+        margin-right: 2rem;
         display: inline-block;
-        margin-right: 10px;
-        align-content: center;
-        margin-left: 20px;
+    }
+    #blogsection{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 80%;
+        margin-bottom: 20px;
     }
     .right-partContactme{
         margin-right: 15px;
     }
     .left-partcontactMe{
         margin-left: 20px;
-        width: 40%;
+        margin-right: 50px;
     }
     .list{
         text-indent: 20px;
@@ -540,32 +568,28 @@ h2{
     
 }
 @media only screen and (max-width: 330px){
-    .skillset1{
-        margin-right: 40px;
+    .body{
+        font-size: 12px;
     }
-
-    .blogPart img{
-        width: 270px;
-        height: 200px;
+    .details-container{
+        width: 10%;
+        margin-bottom: 20px;
+        
+        padding: 10px;
     }
-     
+    .subscribePart{
+        display: block;
+    }
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1024px){
     .upperPart-Home{
         display:none ;
     }
     #hamburger-nav{
         display: flex;
     }
-    #blogsection{
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        width: 40%;  
-    }
     .blogPart{
         gap: 2rem;
-        display: inline-block;
         justify-content: center;
         align-items: center;
     }
