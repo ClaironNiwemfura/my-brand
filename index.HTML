@@ -9,39 +9,25 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <div class="body">
-        <div class="Home"  id="home">
-            <div class="upperPart-Home">
-                <div class="logo">
-                    <h2>CLAIRON</h2>
-                </div>
-                <div class="nav-bar">
-                    <ul class="list">
-                        <li><a href="#home">  HOME</a></li>
-                        <li><a href="#aboutme"> ABOUT ME </a></li>
-                        <li><a href="#project">PROJECTS  </a></li>
-                        <li><a href="#blog">BLOG</a></li>
-                        <li><a href="#contactme">CONTACT ME</a></li>
-                    </ul>
-                </div>   
-            </div>
-            <nav id="hamburger-nav">
-               <div class="logo">Clairon</div>
-               <div class="hamburger-menu">
-                  <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                   </div>
-                  <div class="menu-links">
-                    <li><a href="#home">  HOME</a></li>
-                        <li><a href="#aboutme" onclick="toggleMenu()"> ABOUT ME </a></li>
-                        <li><a href="#project" onclick="toggleMenu()">PROJECTS  </a></li>
-                        <li><a href="#blog" onclick="toggleMenu()">BLOG</a></li>
-                        <li><a href="#contactme" onclick="toggleMenu()">CONTACT ME</a></li>
-                 </div>
-               </div>
+    <div class="body" id="home">
+        <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="logo"><a href="#">Clairon</a></li>
+                    <input type="checkbox" id="check">
+                    <span class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutme">About me</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contactme">contact me</a></li>
+                        <label for="check" class="close-menu"><i class='bx bx-x'></i></label>
+                   </span>
+                   <label for="check" class="open-menu"><i class='bx bx-menu'></i></label>
+                </ul>
             </nav>
+        </header>
+
             <div class="lowerpart-Home" id="home">
                 <div class="leftside-Home">
                   <img src="./Images/WhatsApp Image 2024-01-29 at 14.06.48.jpeg" alt="img">

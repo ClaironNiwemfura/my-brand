@@ -17,47 +17,17 @@ html{
 h2{
     color: #EFB100;
 }
-
-.upperPart-Home{
-    /* margin-top: -20px; */
+/* .list{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-}
-.logo{
-    /* margin-top: 30px; */
-    /* margin-left: 50px ; */
-}
-.list{
-    display: flex;
-    /* justify-content: end; */
+    justify-content: end;
     list-style: none;
     padding: 10px;
-    /* text-decoration-style: none; */
+    text-decoration-style: none;
     gap: 2rem;
-    font-size: 1.2rem;
+   font-size: 1.2rem; 
 
-}
+}  */
 
-.nav-bar a{
-    text-decoration: none;
-    /* color: inherit; */
-    text-decoration-color: white;
-}
-.nav-bar a:hover{
-    color: #EFB100;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-}
-/* .lowerpart-Home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem; */
-    /* height: 80vh; */
-    /* margin-top: 50px; */
-/* } */
 .lowerpart-Home {
     display: flex;
     justify-content: center; /* Center content horizontally */
@@ -147,73 +117,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#hamburger-nav{
-    display: none;
-}
-.hamburger-menu{
-    position: relative;
-    display: inline-block;
-}
-.hamburger-icon{
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-.hamburger-icon span{
-    width: 100%;
-    height: 4px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-}
-.menu-links{
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-
-}
-.menu-links a{
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1 rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-
-}
-.menu-links li{
-    list-style: none;
-}
-.menu-links.open{
-    max-height: 300px;
-}
-.hamburger-icon.open span:first-child{
-    transform: rotate(45deg)translate(10px,5px);
-}
-.hamburger-icon.open span:nth-child(2){
-    opacity: 0;
-}
-.hamburger-icon.open span:last-child{
-    transform: rotate(-45deg)translate(10px,-5px);
-}
-.hamburger-icon span:first-child{
-    transform: none;
-}
-.hamburger-icon span:first-child{
-    opacity: 1;
-}
-.hamburger-icon span:first-child{
-    transform: none;
 }
 #socials-container img{
     width: 30px;
@@ -385,6 +288,96 @@ h2{
     justify-content: center;
     align-content: center;
 }
+
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    /* background-color: rgb(4, 4, 4); */
+    padding: 12px 20px;
+    color: black;
+}
+.nav-bar .bx{
+    color: black;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    /* background-color: black; */
+}
+.menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #EFB100;
+    transition: 0.15s ease-in-out;
+}
+.menu li a:hover::after {width: 100%;}
+.open-menu, .close-menu{
+    position: absolute;
+    color: black; 
+    cursor:pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top: 20px;
+    right: 20px;
+}
+#check{
+    display:none;
+}
+@media only screen and (max-width: 614px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding:10px;
+    }
+    .open-menu , .close-menu{
+        display: block;
+    }
+    #check:checked  ~ .menu{
+        right: 0;
+    }
+}
+
 @media only screen and (max-width: 430px) {
     *{
         font-size: 14px;
@@ -565,7 +558,15 @@ h2{
         text-indent: 20px;
         margin-top:0px;
     }
-    
+}
+@media only screen and (min-width: 768px){
+    .mobile-nav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+
 }
 @media only screen and (max-width: 330px){
     .body{
