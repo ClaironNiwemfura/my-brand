@@ -3,32 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div>
-        <div class="leftPart">
-           <div>
-               <ul>
-                <li>HOME</li>
-                <li>Message</li>
-               </ul>
-           </div>
-        </div>
-        <div class="middlePart">
-            <div class="uppertpart-leftside">
-                <h2>WELCOME <span>BACK</span></h2>
-                <h2>WELCOME BACK</h2>
-                <P>Writter/Author</P>
-                <h3>posts</h3>
-            </div>
-            <div>
-                
-            </div>
-        </div>
-        <div class="rightPart">
+    <!-- <section id="side-bar">
+        <a href="#" class="brand">
+            <img src="./Images/icons8-smile-64.png" alt="">
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="sideMenu">
+            <li>
+                <a href="#">
+                  <img src="./Images/icons8-dashboard-24.png" alt="img">
+                  <span>dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src="./Images/icons8-blogs-64.png" alt="img">
+                  <span>My blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src="./Images/message.png" alt="img">
+                  <span>Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src= "./Images/icons8-settings-50.png"alt="img">
+                  <span>settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src="./Images/icons8-logout-24.png" alt="img">
+                  <span>Logout</span>
+                </a>
+            </li >
+        </ul>
+    </section> -->
 
+    <header class="header">
+        <a href="./index.HTML" class="logo"><h2>CLAIRON</h2></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <div class="actions">
+                <button ><i class='bx bx-user'></i></button>
+                <button><i class='bx bxs-bell-ring'></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="info-box">
+            <h2>Author Info</h2>
+            <p>Name: Clairon Niwemfura</p>
+            <p>Blogs: 6</p>
+            <p>Subscribers: 10k</p>
+        </div>
+       <div class="add-blog-box">
+            <h2>Add New Blog</h2>
+            <form>
+                <label for="blog-name">Blog Name:</label>
+                <input type="text" id="blog-name" name="blog-name" required>
+
+                <label for="blog-description">Description:</label>
+                <textarea id="blog-description" name="blog-description" required></textarea>
+
+                <label for="blog-link">Link:</label>
+                <input type="url" id="blog-link" name="blog-link" required>
+
+                <label for="blog-image">Add Image:</label>
+                <input type="file" id="blog-image" name="blog-image" accept="image/*">
+
+                <button type="submit" class="pst-btn">Post Blog</button>
+            </form>
+        </div>
+
+        <div class="recent-blogs-box">
+            <h2>Recent Blogs</h2>
+            <div class="blog-entry">
+                <h3>Blog Title 1</h3>
+                <p>Views: 100 | Comments: 20 | Likes: 15</p>
+                <button><i class='bx bxs-edit-alt'></i></button>
+                <button><i class='bx bx-trash'></i></button>
+            </div>
+
+            <div class="blog-entry">
+                <h3>Blog Title 2</h3>
+                <p>Views: 75 | Comments: 10 | Likes: 8</p>
+                <button><i class='bx bxs-edit-alt'></i></button>
+                <button><i class='bx bx-trash'></i></button>
+            </div>
+            <div class="blog-entry">
+              <h3>Blog Title 3</h3>
+              <p>Views: 75 | Comments: 10 | Likes: 8</p>
+              <button><i class='bx bxs-edit-alt'></i></button>
+              <button><i class='bx bx-trash'></i></button>
+          </div>
+          <div class="blog-entry">
+            <h3>Blog Title 4</h3>
+            <p>Views: 75 | Comments: 10 | Likes: 8</p>
+            <button><i class='bx bxs-edit-alt'></i></button>
+            <button><i class='bx bx-trash'></i></button>
+        </div>
+        <div class="blog-entry">
+          <h3>Blog Title 5</h3>
+          <p>Views: 75 | Comments: 10 | Likes: 8</p>
+          <button><i class='bx bxs-edit-alt'></i></button>
+          <button><i class='bx bx-trash'></i></button>
+      </div>
+      <div class="blog-entry">
+        <h3>Blog Title 6</h3>
+        <p>Views: 75 | Comments: 10 | Likes: 8</p>
+        <button><i class='bx bxs-edit-alt'></i></button>
+        <button><i class='bx bx-trash'></i></button>
+      </div>
+     
         </div>
     </div>
+    <div class="message-part">
+        <h3>Message</h3>
+        <div class="message">
+             <h4>Username</h4>
+             <h4>E-mails</h4>
+             <h4>Message</h4>
+        </div>
+        <div class="message-list">
+             <p>Umutoni Gloria</p>
+             <p>umutogloria@gmail.com</p>
+             <p>view message</p>
+             <p>reply</p>
+        </div>
+        <div class="message-list">
+         <p>Umutoni Gloria</p>
+         <p>umutogloria@gmail.com</p>
+         <p>view message</p>
+         <p>reply</p>
+        </div>
+   </div>
 </body>
 </html>

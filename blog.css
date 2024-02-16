@@ -1,0 +1,108 @@
+*{
+    background-color: white;
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+    color: black ;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.logo h2{
+    color:#EFB100;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+ a{
+    text-decoration-line: none;
+}
+span{
+    color: #EFB100;
+}
+.blogPart img{
+    width: 380px;
+    height: 200px;
+   
+}
+.blog1 ,.blog2 ,.blog3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.mainblogpage img{
+    width: 600px;
+    height: 300px;
+}
+.blogimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.blogp1{
+    text-align: center;
+} 
+.blogp2{
+    margin-top: 1rem;
+}
+.bx {
+    /* width: 70px;
+    height: 70px; */
+    font-size: 30px;
+    margin-top: 1rem;
+    color: #EFB100;
+}
+.lowerblog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.comment-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.comment-section input{
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.btn-bm{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.btn-bm1{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #EFB100;
+
+}
+.logopart{
+    
+    margin-top: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.logo2 h2{
+    color:#EFB100;
+}
+.logopart .bx{
+    color: black;
+}
+
+@media only screen and (max-width: 430px){
+    .blog1 ,.blog2 ,.blog3{
+        display: block;
+    }
+}

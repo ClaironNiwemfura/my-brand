@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/my-brand/signup.css">
+    <link rel="stylesheet" href="./signup.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="signupPage">
         <div class="logo">
                <a href="index.HTML"><h2>CLAIRON</h2></a> 
         </div>
-        <div class="signupp">
+        <form id="form" class="signupp">
             <div>
                <div class="signuptitle">
                   <h1>SIGN <span>UP</span></h1>
                </div>
-               <div class="signupinputs">
-                  <input type="text" placeholder="First name">
-                  <input type="text" placeholder="Last name"> <br>
-                  <input type="text" placeholder="username"> <br>
-                  <input type="text" placeholder="E-mail"> <br>
-                  <input type="text" placeholder="password"> <br>
-                  <input type="text" placeholder="confirm password"> <br>
+               <div class="signupinputpart">
+                 <div class="signupinputs" id="input-conrtol">
+                    <div class="input-control">
+                        <input id="first-name" type="text" placeholder="First name" >
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="lastname" type="text" placeholder="Last name"> <br>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="username"  type="text" placeholder="username"> <br>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="email" type="text" placeholder="E-mail"> <br>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="password" type="password" placeholder="password"> <br>
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="password2" type="password" placeholder="confirm password"> <br>
+                        <div class="error"></div>
+                    </div> 
+                 </div>
                </div>
+               
               <div>
-                  <button class="signupbtn">SIGN UP</button>
+                  <a href="./blog.HTML"><button class="signupbtn" type="submit">SIGN UP</button></a>
               </div>
               <div class="lowerpartsignup">
-                  <p>Already have an account?</p>
+                  <p>Already have an account?  </p>
                   <a href="login.HTML"><p class="log">Log in here</p></a>
                </div>
            </div>
-       </div>
+        </form>
     </div>
 </body>
 </html>

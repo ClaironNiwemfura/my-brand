@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/my-brand/login.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
     <div class="loginPage">
@@ -12,20 +12,23 @@
             <a href="index.HTML"><h2>CLAIRON</h2></a>
         </div>
         <div class="login">
-            <div>
+            <div >
                 <div class="logintitle">
                   <h1>LOG <span>IN</span></h1>
                 </div>
                 <div class="loginInputs">
-                    <input type="text" placeholder="username"> <br>
-                    <input type="text" placeholder="E-mail"> <br>
-                    <input type="text" placeholder="password"> <br>
+                    <input id="username"  type="text" placeholder="username" name="username" type="text"> <br>
+                    <div class="error"></div>
+                    <input id="email" type="text" placeholder="E-mail" name="username" type="text"> <br>
+                    <div class="error"></div>
+                    <input id="password" type="password" placeholder="password" name="password" type="password"> <br>
+                    <div class="error"></div>
                 </div>
                 <div class="pass">
                     <p>Forgot your password?</p>
                 </div>
                 <div>
-                    <button class="loginbtn">LOGIN UP</button>
+                    <button class="loginbtn" type="submit">LOGIN UP</button>
                 </div>
                 <div class="lowerpartlogin">
                     <p>If you don’t have an account</p>
