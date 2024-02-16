@@ -23,6 +23,21 @@
     justify-content: center;
     align-items: center;
 }
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border: 2px solid#09c372;
+}
+.input-control.error input{
+    border: 2px solid#ff3860;
+}
+.input-control .error{
+    color: #ff3860;
+    font-size: 16px;
+    height: 15px;
+} 
+
 #input1{
     width: 350px;
     margin-right:20px ;
@@ -30,16 +45,20 @@
 #input2{
     width: 350px;
 }
+#password , #password2{
+    color: black;
+}
 .signupinputs input {
-    background-color: #222121;
+    background-color: white;
     border: none;
+    border: 1px solid#EFB100;
     width: 480px;
     height: 50px;
     border-radius: 20px;
     margin-bottom: 20px;
     /* margin-left: 50px; */
     padding-left: 20px;
-    color: white;
+    color: black;
     
 }
 .signupbtn{
@@ -47,7 +66,9 @@
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    margin: auto;
     margin-left: 50px;
+    margin-right: 50px;
 }
 .lowerpartsignup{
     display: flex;
@@ -68,7 +89,8 @@
     margin-bottom: 30px ;
 }
 .lowerpartsignup{
-    margin-top: 30px;
+    margin-top: 20px;
+    gap: 0.3rem;
 }
 a{
     text-decoration: none;
