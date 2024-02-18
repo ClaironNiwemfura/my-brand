@@ -1,5 +1,5 @@
 *{
-    background-color: white;
+    background-color: rgb(243, 243, 239);
     padding: 0px;
     margin: 0px ;
     box-sizing: border-box;
@@ -21,8 +21,9 @@ body{
     color: #EFB100;
 }
 .loginInputs input {
-    background-color: #222121;
+    background-color: rgb(243, 243, 239);
     border: none;
+    border: 1px solid#EFB100;
     width: 480px;
     height: 50px;
     border-radius: 20px;
@@ -52,6 +53,21 @@ body{
     justify-content: center;
     align-content: center;
 }
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border: 2px solid#09c372;
+}
+.input-control.error input{
+    border: 2px solid#ff3860;
+}
+.input-control .error{
+    color: #ff3860;
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* height: 15px; */
+} 
 .lowerpartlogin{
     margin-top: 30px;
 }

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Brand</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="./script.js"></script>
+    <script defer src="./scripts/script.js"></script>
 </head>
 <body>
     <div class="body" id="home">
         <header>
             <nav>
                 <ul class="nav-bar">
-                    <h2 class="logo"><a href="#">ANGELO AND FURAHA</a></h2>
+                    <h2 class="logo"><a href="#">CLAIRON</a></h2>
                     <input type="checkbox" id="check">
                     <span class="menu">
                         <li><a href="#home">Home </a></li>
@@ -47,7 +47,7 @@
                         <button class="btn-aboutme"
                         onclick="window.open('./assets/claironcv.pdf')">Download CV</button>
                         <button class="btn" onclick="location.href=('./#contactme')"
-                        >contact us</button>
+                        >contact me</button>
                     </div>
                     <div id="socials-container">
                         <i class='bx bxl-linkedin-square' id="icon1" onclick="location.href='https://www.linkedin.com/in/clairon-niwemfura-660587249/'"></i>
@@ -88,14 +88,14 @@
                     <h2>Skills</h2>
                     <div class="skills">
                         <div class="skillset1">
-                            <ol> >HTML</ol>
-                            <ol> >CSS</ol>
-                            <ol> >JAVASCRIPT</ol>
+                            <ol> &#x2022; HTML</ol>
+                            <ol> &#x2022; CSS</ol>
+                            <ol> &#x2022; JAVASCRIPT</ol>
                             </div>
                         <div>
-                            <ol> >PYTHON</ol>
-                            <ol> >FIGMA</ol>
-                            <ol> >REACT</ol>
+                            <ol> &#x2022; PYTHON</ol>
+                            <ol> &#x2022; FIGMA</ol>
+                            <ol> &#x2022; REACT</ol>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                    appointments and provides guidance on child care.</p>
                    <a href="https://infant-healthy-assurance-63vs.vercel.app/">Link</a>
                 </div>
-             </div>
+            </div>
             <div class="project2">
                  <div>
                      <h4>project 2</h4>
@@ -198,17 +198,52 @@
                     </div>
                 </div>
                 <div class="right-partContactme">
-                    <input type="text" placeholder="your name">
-                    <input type="text" placeholder="your email"> <br>
-                    <input type="text" placeholder="your subject"> <br>
-                    <input type="text" placeholder="your message" id="message"> <br>
-                    <button class="message-btn">SEND MESSAGE</button>
-                    <a href="./dashboard.HTML"><h2>my dashboard >></h2></a>
-                    <button>go up</button>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your name" id="name" required>
+                        <input type="email" placeholder="Your email" id="email" required> <br>
+                        <input type="text" placeholder="Your subject" id="subject" required> <br>
+                        <textarea placeholder="Your message" id="message" required></textarea> <br>
+                        <button type="submit" class="message-btn">SEND MESSAGE</button>
+                    </form>
                 </div>
             </div>
             
             </div>
  </div>
+
+ <script>
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        // Create object to store user data
+        const userData = {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        };
+
+        // Save user data to local storage
+        localStorage.setItem('userData', JSON.stringify(userData));
+
+        // Redirect to users page
+        // window.location.href = "./dashusers.html";
+        alert="the message is sent successfully"
+    });
+
+    // Scroll to top functionality
+    const goUpBtn = document.getElementById('goUpBtn');
+    goUpBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 </body>
 </html>

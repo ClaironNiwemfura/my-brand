@@ -1,5 +1,5 @@
 *{
-    background-color: white;
+    background-color: rgb(243, 243, 239);
     padding: 0px;
     margin: 0px ;
     box-sizing: border-box;
@@ -35,7 +35,8 @@
 .input-control .error{
     color: #ff3860;
     font-size: 16px;
-    height: 15px;
+    margin-bottom: 20px;
+    /* height: 15px; */
 } 
 
 #input1{
@@ -49,7 +50,7 @@
     color: black;
 }
 .signupinputs input {
-    background-color: white;
+    background-color: rgb(243, 243, 239);
     border: none;
     border: 1px solid#EFB100;
     width: 480px;

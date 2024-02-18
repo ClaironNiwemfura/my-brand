@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 *{
-    background-color:white ;
+    background-color:rgb(243, 243, 239) ;
     /* color: rgb(85,85,85); */
     color: black;
     box-sizing: border-box;
@@ -14,6 +14,10 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+/* HOME SECTION */
+
+
 h2{
     color: #EFB100;
 }
@@ -48,9 +52,6 @@ nav{
 }
 .menu{
     display: flex;
-}
-.menu li{
-    /* padding-left: 30px; */
 }
 .menu li a{
     display: inline-block;
@@ -106,6 +107,7 @@ nav{
     height: 400px;
     width: 80%;
     border-radius: 16rem;
+    object-fit: cover;
 }
 .dif{
     color: white;
@@ -171,6 +173,11 @@ nav{
 #icon2{
     color: black;
 }
+
+
+/* ABOUTME SECTION */
+
+
 .upperpart-aboutMe{
     display: flex;
     justify-content: space-between;
@@ -179,12 +186,15 @@ nav{
 .details-container{
     padding: 1.5rem;
     flex: 1;
-    background-color: white;
+    background-color: rgb(243, 243, 239);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: #EFB100;
     text-align: center;
     width: 200px;
+}
+.details-container .bx{
+    margin-bottom: 10px;
 }
 #blogsection{
     padding: 1rem;
@@ -237,7 +247,6 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
 .btn-aboutme{
     background-color:#EFB100 ;
     border: none;
@@ -254,6 +263,9 @@ nav{
 .skillset1{
     margin-right: 150px;
 }
+
+/* PROJECT SECTION */
+
 .projects h1{
     color: #EFB100;
     text-align: center;
@@ -271,10 +283,12 @@ nav{
 .project1 p{
     margin-top: 10px;
     line-height: 1.5;
+    width: 80%;
 }
 .project2 p{
     margin-top: 10px;
     line-height: 1.5;
+    width: 80%;
 }
 .project2 {
     margin-bottom: 20px;
@@ -290,11 +304,15 @@ nav{
 .project1 ,.project2{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 } 
 .project1 h4,.project2 h4{
     color: #EFB100;
 }
-/* blog-section */
+
+
+/* BLOG-SECTION */
+
 
 .blog h1{
     text-align: center;
@@ -341,7 +359,7 @@ nav{
     border-radius: 20px;
 }
 
-/* contactme-part */
+/* CONTACT-ME SECTION */
 
 .contact-me h1{
     margin-top: 30px;
@@ -409,6 +427,10 @@ nav{
     justify-content: center;
     align-content: center;
 }
+
+
+/* RESPONSIVENESS */
+
 
 @media only screen and (max-width: 614px){
     .menu{
@@ -654,3 +676,4 @@ nav{
         justify-content: center;
         align-items: center;
     }
+}

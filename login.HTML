@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <script defer src="./scripts/script.js"></script>
 </head>
 <body>
     <div class="loginPage">
         <div class="logo">
             <a href="index.HTML"><h2>CLAIRON</h2></a>
         </div>
-        <div class="login">
+        <form id="loginForm" class="login">
             <div >
                 <div class="logintitle">
                   <h1>LOG <span>IN</span></h1>
                 </div>
                 <div class="loginInputs">
-                    <input id="username"  type="text" placeholder="username" name="username" type="text"> <br>
-                    <div class="error"></div>
-                    <input id="email" type="text" placeholder="E-mail" name="username" type="text"> <br>
-                    <div class="error"></div>
-                    <input id="password" type="password" placeholder="password" name="password" type="password"> <br>
-                    <div class="error"></div>
+                    <div class="input-control">
+                        <input id="email1" type="email" placeholder="E-mail" name="username" type="text"> <br>
+                        <div class="login-error"></div>
+                    </div>
+                    <div class="input-control">
+                        <input id="password1" type="password" placeholder="password" name="password" type="password"> <br>
+                        <div class="login-error"></div>
+                    </div>
                 </div>
                 <div class="pass">
                     <p>Forgot your password?</p>
@@ -35,7 +38,7 @@
                    <a href="signup.HTML"><p class="sign">Sign up here</p></a> 
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>

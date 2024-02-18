@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/dashboard1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-envira"></span><span>CLAIRON</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard1.html" class="active"><span class="las la-home">
+                        </span><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="dashblog.html"><span class="las la-clipboard-list">
+                        </span><span>Blogs</span></a>
+                </li>
+                <li>
+                    <a href="dashusers.html"><span class="las la-envelope">
+                        
+                        </span><span>Users</span></a>
+                </li>
+                <li>
+                    <a href="dashmessage.html"><span class="las la-comments">
+                        </span><span>Messages</span></a>
+                </li>
+                <li>
+                    <a href="index.html"><span class="las la-sign-out-alt">
+                        
+                        </span><span>Logout</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars">
+                        </span>
+                </label>
+                Dashboard
+            </h2>
+            <div class="user-wrapper">
+                <a href="login.html"><img src="./Images/icons8-smile-64.png" width="40px" height="40px"></a>
+                <div>
+                    <h4>Clairon</h4>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="add-blog-box">
+                <h2 class="blogheader">Add New Blog</h2>
+                <form id="blogForm">
+                    <div class="bloginput">
+                        <label for="blog-name">Blog Name:</label>
+                        <input type="text" id="blog-name" name="blog-name" required> 
+                    </div>
+                    <div class="bloginput">
+                        <label for="blog-description">Description:</label>
+                        <input id="blog-description" name="blog-description" required>
+                    </div>
+    
+                    <div class="bloginput">
+                        <label for="blog-link">Link:</label>
+                        <input type="url" id="blog-link" name="blog-link" required>
+                    </div>
+                    <div class="bloginput">
+                        <label for="blog-image">Add Image:</label>
+                        <input type="file" id="blog-image" name="blog-image" accept="image/*">
+                    </div>
+                   <button type="submit" class="pst-btn">Post Blog</button>
+                </form>
+            </div>
+    
+            <div class="recent-blogs-box" id="recentBlogs">
+                <h2 class="blogheader">Recent Blogs</h2>
+                <div class="blog-entry">
+                    <h3>Blog Name</h3> 
+              <p>Description</p>
+                    <p>Views: 100 | Comments: 20 | Likes: 15</p>
+                    <button>edit</button>
+                    <button>del</button>
+                </div>
+    
+                <div class="blog-entry">
+                    <h3>Blog Name</h3> 
+                    <p>Description</p>
+                    <p>Views: 75 | Comments: 10 | Likes: 8</p>
+                    <button>edit</button>
+                    <button>del</button>
+                </div>
+                <div class="blog-entry">
+                    <h3>Blog Name</h3> 
+                    <p>Description</p>
+                  <p>Views: 75 | Comments: 10 | Likes: 8</p>
+                  <button>edit</button>
+                  <button>del</button>
+              </div>
+              <div class="blog-entry">
+                <h3>Blog Name</h3> 
+                <p>Description</p>
+                <p>Views: 75 | Comments: 10 | Likes: 8</p>
+                <button>edit</button>
+                <button class="delete-btn">del</button>
+            </div>
+            <div class="blog-entry">
+              <h3>Blog Name</h3> 
+              <p>Description</p>
+              <p>Views: 75 | Comments: 10 | Likes: 8</p>
+              <button>edit</button>
+              <button>delete</button>
+          </div>
+          <div class="blog-entry">
+            <h3>Blog Name</h3> 
+            <p>Description</p>
+            <p>Views: 75 | Comments: 10 | Likes: 8</p>
+            <button>edit</button>
+            <button>del</button>
+          </div>
+         
+            </div>
+        </main>
+        
+    </div>
+    </div>
+    <script>
+        const blogForm = document.getElementById('blogForm');
+        const recentBlogs = document.getElementById('recentBlogs');
+    
+        // Retrieve data from local storage on page load
+        let savedBlogs = JSON.parse(localStorage.getItem('blogs')) || [];
+    
+        // Render saved blogs
+        savedBlogs.forEach(blog => renderBlog(blog));
+    
+        blogForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const blogName = document.getElementById('blog-name').value;
+            const blogDescription = document.getElementById('blog-description').value;
+            const blogLink = document.getElementById('blog-link').value;
+    
+            const newBlog = { name: blogName, description: blogDescription, link: blogLink };
+            
+            // Add new blog to the list of saved blogs
+            savedBlogs.push(newBlog);
+    
+            // Save updated list of blogs to local storage
+            localStorage.setItem('blogs', JSON.stringify(savedBlogs));
+    
+            // Render the new blog
+            renderBlog(newBlog);
+    
+            blogForm.reset();
+        });
+    
+        function renderBlog(blog) {
+            const blogEntry = document.createElement('div');
+            blogEntry.classList.add('blog-entry');
+            blogEntry.innerHTML = `
+                <h3>${blog.name}</h3>
+                <p>${blog.description}</p>
+                <p>Views: 0 | Comments: 0 | Likes: 0</p>
+                <button><i class='bx bxs-edit-alt'></i></button>
+                <button class="delete-btn"><i class='bx bx-trash'></i></button>
+            `;
+            
+            recentBlogs.appendChild(blogEntry);
+            const deleteButtons = document.querySelectorAll('.delete-btn');
+            deleteButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const blogEntry = button.parentElement;
+                    const blogName = blogEntry.querySelector('h3').textContent;
+                    const blogDescription = blogEntry.querySelector('p').textContent;
+    
+                    // Remove the blog entry from the UI
+                    recentBlogs.removeChild(blogEntry);
+    
+                    // Remove the blog from the savedBlogs array
+                    savedBlogs = savedBlogs.filter(savedBlog =>
+                        savedBlog.name !== blogName || savedBlog.description !== blogDescription
+                    );
+    
+                    // Update the saved blogs in local storage
+                    localStorage.setItem('blogs', JSON.stringify(savedBlogs));
+    
+                    console.log('Delete button clicked for blog:', blogName);
+                });
+            });
+        }
+    </script>
+    </script>
+</body>
+</html>
