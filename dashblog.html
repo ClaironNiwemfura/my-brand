@@ -150,8 +150,9 @@
             const blogName = document.getElementById('blog-name').value;
             const blogDescription = document.getElementById('blog-description').value;
             const blogLink = document.getElementById('blog-link').value;
+            const blogimage = document.getElementById('blog-image').value;
     
-            const newBlog = { name: blogName, description: blogDescription, link: blogLink };
+            const newBlog = { name: blogName, description: blogDescription, link: blogLink, image: blogimage };
             
             // Add new blog to the list of saved blogs
             savedBlogs.push(newBlog);
@@ -200,6 +201,6 @@
             });
         }
     </script>
-    </script>
+    
 </body>
 </html>

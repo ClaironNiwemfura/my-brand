@@ -59,13 +59,14 @@ body{
 .input-control.success input{
     border: 2px solid#09c372;
 }
-.input-control.error input{
+.input-control.login-error input{
     border: 2px solid#ff3860;
 }
-.input-control .error{
+.input-control .login-error{
     color: #ff3860;
     font-size: 16px;
     margin-bottom: 20px;
+    margin-left: 60px;
     /* height: 15px; */
 } 
 .lowerpartlogin{

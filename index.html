@@ -202,7 +202,7 @@
                         <input type="text" placeholder="Your name" id="name" required>
                         <input type="email" placeholder="Your email" id="email" required> <br>
                         <input type="text" placeholder="Your subject" id="subject" required> <br>
-                        <textarea placeholder="Your message" id="message" required></textarea> <br>
+                        <input placeholder="Your message" id="message" required> <br>
                         <button type="submit" class="message-btn">SEND MESSAGE</button>
                     </form>
                 </div>
@@ -213,37 +213,25 @@
 
  <script>
     const contactForm = document.getElementById('contactForm');
-
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
-
-        // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
-
-        // Create object to store user data
-        const userData = {
+        
+        const usermessages = {
             name: name,
             email: email,
             subject: subject,
             message: message
         };
 
-        // Save user data to local storage
-        localStorage.setItem('userData', JSON.stringify(userData));
-
-        // Redirect to users page
-        // window.location.href = "./dashusers.html";
-        alert="the message is sent successfully"
+        localStorage.setItem('userData', JSON.stringify(usermessages));
+        alert("the message is sent successfully")
+        contactForm.reset();
     });
 
-    // Scroll to top functionality
-    const goUpBtn = document.getElementById('goUpBtn');
-    goUpBtn.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
 </script>
 </body>
 </html>

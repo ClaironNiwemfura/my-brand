@@ -43,7 +43,7 @@ nav{
     align-items: center;
     list-style: none;
     position: relative;
-    /* background-color: rgb(4, 4, 4); */
+    background-color:   rgb(243, 243, 239);
     padding: 12px 20px;
     color: black;
 }
@@ -110,7 +110,7 @@ nav{
     object-fit: cover;
 }
 .dif{
-    color: white;
+    color: black;
 }
 .btn{
     /* background-color:#EFB100 ; */
@@ -343,6 +343,14 @@ nav{
     margin-left: 50px;
     display: flex;
     justify-content: space-around;
+    border: 1px solid#EFB100;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 2rem;
+    /* box-shadow: rgba(0, 0, 0,0.2) ; */
+    /* box-shadow: 0 2px 4px rgba(4, 4, 4 ,0.2); */
+    width: 80%;
+    margin-left: 6rem;
     
 }
 .subscribePart p{
